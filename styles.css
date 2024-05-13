@@ -1,0 +1,275 @@
+/* Keskitetään teksti ja lisätään ylä- ja alatilaa */
+.main-content {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Suurennetaan Our Mission -otsikon korkeutta */
+  .main-content h1 {
+    font-size: 34px; /* Aseta haluttu fonttikoko */
+    line-height: 1.0; /* Aseta haluttu riviväli */
+    height: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* Määritellään h2-elementti */
+  .main-content h2 {
+    margin: 20px 0;
+    font-size: 34px;
+    line-height: 1.0;
+    height: 50px;
+  }
+  
+  /* Musta laatikko */
+  .black-box {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+  }
+  
+  /* Kolme saraketta */
+  .three-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Yksittäinen sarake */
+  .column {
+    width: 32%;
+  }
+  
+  /* Alatunnisteen navigaatio */
+  .footer-nav ul {
+    justify-content: center;
+    display: flex;
+  }
+  
+  /* Alatunnisteen listaelementit */
+  .footer-nav li {
+    margin: 0 5px;
+  }
+
+  /* Suuremmat kentät */
+  .field {
+    font-size: 18px;
+    padding: 20px;
+    height: 200px; /* Aseta haluttu korkeus */
+    /* Muut tyylit */
+  }
+
+  /* Asetetaan fontti Arialiksi tai sans-serifiksi */
+.body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Määritellään otsikko ja alatunniste */
+  header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  /* Poistetaan listan merkinnät ja asetetaan välistys */
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Asetetaan listaelementit vierekkäin */
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  /* Asetetaan linkkien väri ja poistetaan alleviivaukset */
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Määritellään kenttäelementti */
+  .field {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px; /* Pyöristetyt reunat */
+    margin-bottom: 20px;
+    display: inline-block; /* Kentät vierekkäin */
+    width: calc(33.33% - 20px); /* Jaa tila kolmen kentän kesken */
+    box-sizing: border-box; /* Sisällytä reunat leveyteen */
+  }
+  
+  /* Kuvakarusellin kuvat */
+  .carousel img {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 3s ease-in-out;
+  }
+  
+  /* Kuvakarusellin kontaineri */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Pisteet/kuvakkeet */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Aktiivinen piste tai hover-tilassa oleva piste */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Edellinen ja seuraava painikkeet */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Sijoita "seuraava" painike oikealle */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Värjää taustaa hieman läpinäkyväksi hover-tilassa */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Kaikki elementit käyttävät border-box-mallia */
+* {
+    box-sizing: border-box;
+}
+
+/* Kuvakarusellin kontaineri */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Piilota kuvat oletuksena */
+.mySlides {
+    display: none;
+}
+
+/* Edellinen ja seuraava painikkeet */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Kuvateksti */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Numeroteksti (1/3 jne.) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+
+/* Asetetaan "seuraava" painike oikealle */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Hiiren ollessa päällä, lisätään musta taustaväri hieman läpinäkyvänä */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Kuvateksti */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Numeroteksti (1/3 jne.) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Pisteet/kuvakkeet */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Aktiivinen piste tai hover-tilassa oleva piste */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Häivytysanimaatio */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
